@@ -50,7 +50,9 @@ public class WalkThatWay : MonoBehaviour {
 	{
 		if(danger.gameObject.name == "rocket(Clone)")
 		{
-			Debug.Log("hit");
+			gameObject.SetActive(false);
+
+			lose = true;
 		}
 	}
 
