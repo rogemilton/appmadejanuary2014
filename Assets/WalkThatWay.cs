@@ -25,14 +25,17 @@ public class WalkThatWay : MonoBehaviour {
 	
 	void Rockets()
 	{
-		Vector3 instants = new Vector3 (11,Random.Range(2,7),0);
-		Instantiate(rocket, instants,Quaternion.identity);
+		if(!lose)
+		{
+			Vector3 instants = new Vector3 (11,Random.Range(2,7),0);
+			Instantiate(rocket, instants,Quaternion.identity);
+		}
 	}
 
 	void Accelerate(float modifier)
 	{
-		transform.Translate(Input.acceleration.x * 2,Input.acceleration.y * 2,0);
-		background.transform.Translate(Input.acceleration.x,0,0);
+		transform.Translate(Input.acceleration.x,(Input.acceleration.y)+0.5f,0);
+		//background.transform.Translate(Input.acceleration.x,0,0);
 	}
 	
 	void OnGUI()
@@ -50,11 +53,11 @@ public class WalkThatWay : MonoBehaviour {
 	{
 		if(danger.gameObject.name == "rocket(Clone)")
 		{
-			gameObject.SetActive(false);
-
 			lose = true;
 		}
+
 	}
+
 
 	
 }
