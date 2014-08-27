@@ -18,9 +18,22 @@ public class WalkThatWay : MonoBehaviour {
 	void Update () 
 	{
 		Accelerate(0.1f);
-		if(frame % 100 == 0)
-			Rockets();
+        if (frame % 100 == 0)
+        {
+            Rockets();
+        }
+        else if (frame % 50 == 0)
+        {
+            Rockets();
+        }
 		frame++;
+		/*
+		//Moves Forward and back along z axis                           //Up/Down
+		transform.Translate(Vector2.up * Time.deltaTime * Input.GetAxis("Vertical")* 4);
+		//Moves Left and right along x Axis                               //Left/Right
+		transform.Translate(Vector2.right * Time.deltaTime * Input.GetAxis("Horizontal")* 4);  
+		*/
+
 	}
 	
 	void Rockets()
@@ -42,9 +55,12 @@ public class WalkThatWay : MonoBehaviour {
 	{
 		if(lose)
 		{
+            GameObject.Find("Score").GetComponent<Points>().enabled = false;
+            Application.LoadLevel(0);
 			if(GUI.Button(new Rect(0,0,Screen.width,Screen.width), "YOU LOSE!)@! TRY AGAIN"))
 			{
 				Application.LoadLevel(0);
+                
 			}
 		}
 	}
