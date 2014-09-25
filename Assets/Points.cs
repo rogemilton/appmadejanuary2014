@@ -15,7 +15,7 @@ public class Points : MonoBehaviour {
 		timer -= Time.deltaTime;
 		if( timer <= 0 )
 		{
-			point += 5;
+			point += 1;
 			timer = .25F;
 			guiText.text = "Score: " + point; //1/2 second
 		}
