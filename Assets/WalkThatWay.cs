@@ -18,7 +18,7 @@ public class WalkThatWay : MonoBehaviour {
 		//keep the character from falling off the fucking screen
 		//all the goddamn time!!
 		Screen.orientation = ScreenOrientation.LandscapeLeft;
-		transform.Translate( new Vector3(Input.acceleration.y, Input.acceleration.x, 0));
+		
 	}
 	
 	// Update is called once per frame
@@ -114,8 +114,9 @@ public class WalkThatWay : MonoBehaviour {
 	
 	void Accelerate(float modifier)
 	{
-		//transform.Translate(Input.acceleration.x,(Input.acceleration.y)+0.5f,0);
+		transform.Translate(Input.acceleration.x,(Input.acceleration.y)+0.5f,0);
 		//background.transform.Translate(Input.acceleration.x,0,0);
+        
 	}
 	
 	void OnGUI()

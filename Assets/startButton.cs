@@ -23,11 +23,29 @@ public class startButton : MonoBehaviour {
 	{
 		Application.LoadLevel ("firstscene");
 	}
-
-	if(GUI.Button( new Rect(optxPos, optyPos, 200,70), "HELP"))
+	
+	string buttonText = "HELP";
+	bool isDisplayed = false;
+	if(GUI.Button( new Rect(optxPos, optyPos, 200,70),buttonText))
 	{
-			GameObject.FindGameObjectWithTag("Instructions").guiTexture.enabled = true;
+
+
+			if(isDisplayed == false)
+			{
+				AudioListener.volume = 0.0F;
+				isDisplayed = true;
+				buttonText = "Exit";
+				GameObject.FindGameObjectWithTag("Instructions").guiTexture.enabled = isDisplayed;
+			}
+			else
+			{
+				AudioListener.volume = 1.0F;
+				isDisplayed = false;
+				buttonText = "Help";
+				GameObject.FindGameObjectWithTag("Instructions").guiTexture.enabled = isDisplayed;
+			}
 	}
+	
 
 
 	GUI.EndGroup ();
