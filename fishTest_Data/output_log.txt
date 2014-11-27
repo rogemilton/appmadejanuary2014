@@ -11,7 +11,7 @@ Platform assembly: C:\Users\Owner\Documents\GitHub\appmadejanuary2014\fishTest_D
 Loading C:\Users\Owner\Documents\GitHub\appmadejanuary2014\fishTest_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: C:\Users\Owner\Documents\GitHub\appmadejanuary2014\fishTest_Data\Managed\Assembly-CSharp.dll (this message is harmless)
 Loading C:\Users\Owner\Documents\GitHub\appmadejanuary2014\fishTest_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-- Completed reload, in  0.091 seconds
+- Completed reload, in  0.135 seconds
 desktop: 1280x800 60Hz; virtual: 1280x800 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
@@ -815,9 +815,947 @@ Invalid GUIClip stack popping
  
 (Filename:  Line: 101)
 
-UnloadTime: 0.763937 ms
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+Invalid GUIClip stack popping
+ 
+(Filename:  Line: 101)
+
+UnloadTime: 0.322940 ms
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
 Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 174.
-Total: 2.803383 ms (FindLiveObjects: 0.029086 ms CreateObjectMapping: 0.037213 ms MarkObjects: 0.273751 ms  DeleteObjects: 0.023525 ms)
+Total: 0.915353 ms (FindLiveObjects: 0.009837 ms CreateObjectMapping: 0.013259 ms MarkObjects: 0.116344 ms  DeleteObjects: 0.008982 ms)
 
+HandleD3DDeviceLost
+  HandleD3DDeviceLost: needs reset, doing it
+FullResetD3DDevice
+ResetD3DDevice
+dev->Reset
+D3Dwindow device not lost anymore
+HandleD3DDeviceLost
+  HandleD3DDeviceLost: still lost
+Skipped rendering frame because GfxDevice is in invalid state (device lost)
+ 
+(Filename:  Line: 1502)
+
+HandleD3DDeviceLost
+  HandleD3DDeviceLost: needs reset, doing it
+FullResetD3DDevice
+ResetD3DDevice
+dev->Reset
+D3Dwindow device not lost anymore
