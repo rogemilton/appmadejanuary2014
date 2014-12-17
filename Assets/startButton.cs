@@ -25,29 +25,16 @@ public class startButton : MonoBehaviour {
 	}
 	
 	string buttonText = "HELP";
-	bool isDisplayed = false;
+	
 	if(GUI.Button( new Rect(optxPos, optyPos, 200,70),buttonText))
 	{
 
 
-			if(isDisplayed == false)
-			{
-				AudioListener.volume = 0.0F;
-				isDisplayed = true;
-				buttonText = "Exit";
-				GameObject.FindGameObjectWithTag("Instructions").guiTexture.enabled = isDisplayed;
-			}
-			else
-			{
-				AudioListener.volume = 1.0F;
-				isDisplayed = false;
-				buttonText = "Help";
-				GameObject.FindGameObjectWithTag("Instructions").guiTexture.enabled = isDisplayed;
-			}
+			Application.LoadLevel("Intstructions");
 	}
 	
 
 
-	GUI.EndGroup ();
+	//GUI.EndGroup ();
 	}
 }
