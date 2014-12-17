@@ -30,7 +30,7 @@ public class startButton : MonoBehaviour {
 	{
 
 
-			Application.LoadLevel("Intstructions");
+			Application.LoadLevel("Instructions");
 	}
 	
 

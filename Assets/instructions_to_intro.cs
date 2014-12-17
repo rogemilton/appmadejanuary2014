@@ -10,7 +10,7 @@ public class instructions_to_intro : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+		Screen.orientation = ScreenOrientation.LandscapeLeft;
 	}
 	
 	// Update is called once per frame
@@ -21,7 +21,7 @@ public class instructions_to_intro : MonoBehaviour {
 	//ALL THIS SCRIPT DOES IS LOAD THE INTRO SCREEN IF YOU PRESS EXIT AND
 	//START THE GAME IF YOU PRESS START
 
-    void onGUI()
+    void OnGUI()
 	{
 		//BUTTON POSITIONS
 		float xPos = Screen.width /2 -10;
