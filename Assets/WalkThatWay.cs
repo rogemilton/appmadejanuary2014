@@ -12,46 +12,40 @@ public class WalkThatWay : MonoBehaviour {
 	float timer4 = 0.0F;
 	public Points points;//reference to score
 
+	public Transform musicPrefab;
 	// Use this for initialization
 	void Start () 
 	{ 	
+		if(!GameObject.FindGameObjectWithTag("Music"))
+		{
+			var mManager = Instantiate(musicPrefab, transform.position, Quaternion.identity) as Transform; 
+			mManager.name = musicPrefab.name;
+			DontDestroyOnLoad(mManager);
+		}
 		//keep the character from falling off the fucking screen
 		//all the goddamn time!!
 		Screen.orientation = ScreenOrientation.LandscapeLeft;
+		Screen.sleepTimeout = SleepTimeout.NeverSleep;
 		
 	}
 	
 	// Update is called once per frame
 	void Update() 
 	{   
+		bool debugFrontCollider = true;
+		if(!debugFrontCollider)
+		{
 		Accelerate(0.001f);
 		//insantiate rockets according to this script
 		makeItHard();
+		}
+		else
+		{
 		//Moves Forward and back along z axis                           //Up/Down
-		/*transform.Translate(Vector2.up * Time.deltaTime * Input.GetAxis("Vertical")* 4);
+		transform.Translate(Vector2.up * Time.deltaTime * Input.GetAxis("Vertical")* 4);
 		//Moves Left and right along x Axis                               //Left/Right
 		transform.Translate(Vector2.right * Time.deltaTime * Input.GetAxis("Horizontal")* 4); 
-		Vector3 dir = new Vector3 (0.0F,0.0F,0.0F);
-
-		// we assume that device is held parallel to the ground
-		// and Home button is in the right hand
-		
-		// remap device acceleration axis to game coordinates:
-		//  1) XY plane of the device is mapped onto XZ plane
-		//  2) rotated 90 degrees around Y axis
-		dir.x = -Input.acceleration.y;
-		dir.z = Input.acceleration.x;
-		
-		// clamp acceleration vector to unit sphere
-		if (dir.sqrMagnitude > 1)
-			dir.Normalize();
-		
-		// Make it move 10 meters per second instead of 10 meters per frame...
-		dir *= Time.deltaTime;
-		
-		// Move object
-		transform.Translate (dir * 2);
-*/
+		}
 	}
 	//as the user's points increase, 
 	//I will kill him

@@ -9,8 +9,15 @@ public class instructions_to_intro : MonoBehaviour {
 
 
 	// Use this for initialization
+	public Transform musicPrefab;
 	void Start () {
 		Screen.orientation = ScreenOrientation.LandscapeLeft;
+		if(!GameObject.FindGameObjectWithTag("Music"))
+		{
+			var mManager = Instantiate(musicPrefab, transform.position, Quaternion.identity) as Transform; 
+			mManager.name = musicPrefab.name;
+			DontDestroyOnLoad(mManager);
+		}
 	}
 	
 	// Update is called once per frame

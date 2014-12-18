@@ -11,6 +11,16 @@ public class startButton : MonoBehaviour {
 		
 
 	}
+    public Transform musicPrefab;
+    void Start()
+	{
+		if(!GameObject.FindGameObjectWithTag("Music"))
+		{
+			var mManager = Instantiate(musicPrefab, transform.position, Quaternion.identity) as Transform; 
+			mManager.name = musicPrefab.name;
+			DontDestroyOnLoad(mManager);
+		}
+	}
 
 	void OnGUI()
 	{
@@ -35,6 +45,6 @@ public class startButton : MonoBehaviour {
 	
 
 
-	//GUI.EndGroup ();
+	GUI.EndGroup ();
 	}
 }
