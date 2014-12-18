@@ -1,15 +1,17 @@
 using UnityEngine;
-using System.Collections;
+using System.Collections; 
+
 
 public class WalkThatWay : MonoBehaviour {
 	public GameObject background;
 	public GameObject rocket;
 	public GameObject projectile;
-	public bool lose;
+
 	float timer1 = 0.0F;
 	float timer2 = 0.0F;
 	float timer3 = 0.0F;
 	float timer4 = 0.0F;
+	bool lose = false;
 	public Points points;//reference to score
 
 	public Transform musicPrefab;
@@ -32,7 +34,7 @@ public class WalkThatWay : MonoBehaviour {
 	// Update is called once per frame
 	void Update() 
 	{   
-		bool debugFrontCollider = true;
+		bool debugFrontCollider = false;
 		if(!debugFrontCollider)
 		{
 		Accelerate(0.001f);
@@ -45,7 +47,9 @@ public class WalkThatWay : MonoBehaviour {
 		transform.Translate(Vector2.up * Time.deltaTime * Input.GetAxis("Vertical")* 4);
 		//Moves Left and right along x Axis                               //Left/Right
 		transform.Translate(Vector2.right * Time.deltaTime * Input.GetAxis("Horizontal")* 4); 
+			makeItHard();
 		}
+
 	}
 	//as the user's points increase, 
 	//I will kill him
@@ -96,11 +100,13 @@ public class WalkThatWay : MonoBehaviour {
 		}
 
 	}
-	void Rockets()
+
+
+    void Rockets()
 	{
 		if(!lose)
-		{
-			Vector3 instants = new Vector3 (11,Random.Range(2,7),0);
+		{   Random.seed = (int)System.DateTime.Now.Ticks;
+			Vector3 instants = new Vector3 (11.0f,Random.Range(1.0f,8.2f),0.0f);
 			Instantiate(rocket, instants,Quaternion.identity);
 		}
 	}
@@ -108,33 +114,28 @@ public class WalkThatWay : MonoBehaviour {
 	
 	void Accelerate(float modifier)
 	{
-		transform.Translate(Input.acceleration.x,(Input.acceleration.y)+0.5f,0);
-		//background.transform.Translate(Input.acceleration.x,0,0);
-        
+	  transform.Translate(Input.acceleration.x,(Input.acceleration.y)+0.5f,0);
 	}
 	
 	void OnGUI()
 	{
 		if(lose)
 		{
-			GameObject.FindGameObjectWithTag("score").GetComponent<Points>();
+			//GameObject.FindGameObjectWithTag("score").GetComponent<Points>();
             Application.LoadLevel(0);
 
 		}
 	
 	}
 
-
-	void OnCollisionEnter2D(Collision2D other)
+	void OnTriggerEnter(Collider other)
 	{
-		if(other.gameObject.name == "rocket(Clone)")
-		{
-			lose = true;
+		if (other.gameObject.tag == "enemy") 
+  		{
+			bool lose = false;
+			lose = true;		
 		}
-		//why does this not increment the score and destroy the game object?
-
 	}
-
 
 
 }

@@ -10,15 +10,18 @@ public class rocket_wall_collision_patch : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+
+		var rockets = GameObject.FindGameObjectsWithTag("enemy");
+		int len = rockets.Length;
+		for(int i = 0; i < len; i++)
+			Physics.IgnoreCollision (GameObject.FindGameObjectWithTag ("right_wall").collider, rockets[i].collider);
 	}
-	void OnCollisionEnter2D(Collision other)
+	void OnCollisionEnter(Collision other)
 	{
 
-		if(other.gameObject.name == "rocket(Clone)")
-		{
-			Physics.IgnoreCollision(GameObject.FindGameObjectWithTag("right_wall").collider, other.collider);
-		}
+		if (other.gameObject.name == "rocket(Clone)") {
+						Physics.IgnoreCollision (GameObject.FindGameObjectWithTag ("right_wall").collider, other.collider);
+				} 
 
 	}
 }
