@@ -46,10 +46,13 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AdBuddiz.cs" />
      <Compile Include="Assets\Audio.cs" />
+     <Compile Include="Assets\ExampleScene\AdBuddizExample.cs" />
      <Compile Include="Assets\Points.cs" />
      <Compile Include="Assets\Rocket.cs" />
      <Compile Include="Assets\WalkThatWay.cs" />
+     <Compile Include="Assets\adScript.cs" />
      <Compile Include="Assets\animationScript.cs" />
      <Compile Include="Assets\coin.cs" />
      <Compile Include="Assets\instructions_to_intro.cs" />
@@ -57,9 +60,14 @@
      <Compile Include="Assets\sceneScroller.cs" />
      <Compile Include="Assets\scoreDisplay.cs" />
      <Compile Include="Assets\startButton.cs" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{0E768768-672A-712A-9F6F-0BD04D88D150}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
