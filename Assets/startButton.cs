@@ -14,6 +14,7 @@ public class startButton : MonoBehaviour {
 
 	}
     public Transform musicPrefab;
+	public Transform adPrefab;
     void Start()
 	{
 
@@ -25,13 +26,19 @@ public class startButton : MonoBehaviour {
 			mManager.name = musicPrefab.name;
 			DontDestroyOnLoad(mManager);
 		}
-		//Ad scripts and shit
-		AdBuddizBinding.SetLogLevel(AdBuddizBinding.ABLogLevel.Info);         // log level
-		AdBuddizBinding.SetAndroidPublisherKey("TEST_PUBLISHER_KEY_ANDROID"); // replace with your Android app publisher key
-		AdBuddizBinding.SetIOSPublisherKey("TEST_PUBLISHER_KEY_IOS");         // replace with your iOS app publisher key
-		AdBuddizBinding.SetTestModeActive();                                  // to delete before submitting to store
-		AdBuddizBinding.CacheAds();  
+		if (!GameObject.FindGameObjectWithTag ("_Ad")) {
+						var adManager = Instantiate (adPrefab, transform.position, Quaternion.identity) as Transform;
+						
 
+				
+						//Ad scripts and shit
+						AdBuddizBinding.SetLogLevel (AdBuddizBinding.ABLogLevel.Info);         // log level
+						AdBuddizBinding.SetAndroidPublisherKey ("TEST_PUBLISHER_KEY_ANDROID"); // replace with your Android app publisher key
+						AdBuddizBinding.SetIOSPublisherKey ("TEST_PUBLISHER_KEY_IOS");         // replace with your iOS app publisher key
+						AdBuddizBinding.SetTestModeActive ();                                  // to delete before submitting to store
+						AdBuddizBinding.CacheAds ();  
+	
+				}
 	}
 	void Update()
 	{

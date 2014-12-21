@@ -4,10 +4,10 @@ using System.Collections;
 
 public class Rocket : MonoBehaviour {
 	// Use this for initialization
-	public int life = 1450;
+	public int life;
 	//public float speed = (Time.timeSinceLevelLoad * 0.05f) + 0.05f; -Roger: I'll explain this later!
 	void Start () {
-		life = 1450;
+
 	}
 	
 	// Update is called once per frame
