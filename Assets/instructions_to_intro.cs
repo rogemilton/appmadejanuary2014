@@ -36,6 +36,13 @@ public class instructions_to_intro : MonoBehaviour {
 		float optxPos = Screen.width/2 - 250;
 		float optyPos = Screen.height - 70;
 
+		var instruction_string = "1.Tilt your screen to move\n" +
+						"\n2.Avoid Rockets" +
+						"\n\n3.Tap the Screen to Pause" +
+				"\n\n4.Have Fun!";
+
+		 GUI.Box (new Rect (0, 0, Screen.width, Screen.height-75), instruction_string);
+
 		//START BUTTON
 		if (GUI.Button ( new Rect (xPos, yPos,200,70), "START"))
 		{

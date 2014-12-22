@@ -11,7 +11,7 @@ public class WalkThatWay : MonoBehaviour {
 	float timer2 = .95F;
 	float timer3 = 1.25F;
 	float timer4 = 1.55F;
-	float timer5 = 0.0F;
+
 	public bool lose;
 	public Points points;//reference to score
 
