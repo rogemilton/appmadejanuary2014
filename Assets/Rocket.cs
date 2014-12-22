@@ -19,11 +19,47 @@ public class Rocket : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		if (other.gameObject.name == "mainChar") 
-		{
-			//GameObject.FindGameObjectWithTag("score").GetComponent<Points>();
-			Application.LoadLevel(0);
+				if (other.gameObject.tag == "Player") {
+						//Application.LoadLevel (0);
+			other.gameObject.GetComponent<WalkThatWay> ().lose = true;/*
+			int current_score = (int) GameObject.FindGameObjectWithTag("score").GetComponent<Points>().point;
+			var best_score = 0;
+			if(PlayerPrefs.HasKey("Score"))
+			{
+				best_score = PlayerPrefs.GetInt("Score");
+				
+			}
+			//If theres a new high score then set it
+			if(current_score > best_score)
+			{
+				PlayerPrefs.SetInt("Score",current_score);
+				PlayerPrefs.Save();
+				
+			}
+			GUI.Box(new Rect(Screen.width /3 , Screen.height/3 , 150, 150), "Current Score: " + current_score.ToString() + "\n\nBest Score: " +best_score.ToString());
+			if(GUI.Button( new Rect(Screen.width/2 - 75, Screen.height, 150,70),"Play Again"))
+			{
+				
+				
+				Application.LoadLevel("firstscene");
+				//		GUI.EndGroup ();
+			}
+			
+			if(GUI.Button( new Rect(Screen.width, Screen.height, 150,70),"Quit"))
+			{
+				
+				
+				Application.LoadLevel(0);
+				//		GUI.EndGroup ();
+			}
+*/
+				
 
+				}
 		}
-	}
+		
+
+				
+
+
 }

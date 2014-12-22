@@ -82,7 +82,7 @@ public class startButton : MonoBehaviour {
 	}
 	
 
-		if((GUI.Button (musicRect, "Toggle Music")))
+		if((GUI.Button (musicRect, "MUSIC ON/OFF")))
 		   {
 		
 			if (!GameObject.FindGameObjectWithTag ("Music")) {
