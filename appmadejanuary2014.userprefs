@@ -1,14 +1,30 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\instructions_to_intro.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\startButton.cs">
     <Files>
-      <File FileName="Assets\instructions_to_intro.cs" Line="42" Column="8" />
-      <File FileName="Assets\WalkThatWay.cs" Line="14" Column="2" />
-      <File FileName="Assets\startButton.cs" Line="1" Column="1" />
-      <File FileName="Assets\Plugins\AdBuddiz\AdBuddizManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\ExampleScene\AdBuddizExample.cs" Line="1" Column="1" />
+      <File FileName="Assets\AdBuddiz.cs" Line="1" Column="1" />
+      <File FileName="Assets\instructions_to_intro.cs" Line="1" Column="1" />
+      <File FileName="Assets\WalkThatWay.cs" Line="1" Column="1" />
+      <File FileName="Assets\startButton.cs" Line="36" Column="437" />
       <File FileName="Assets\Rocket.cs" Line="1" Column="1" />
+      <File FileName="Assets\Plugins\AdBuddiz\AdBuddizManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\high_score.cs" Line="1" Column="1" />
+      <File FileName="Assets\Points.cs" Line="1" Column="1" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Assembly-CSharp" expanded="True">
+            <Node name="startButton.cs" selected="True" />
+          </Node>
+          <Node name="Assembly-CSharp-firstpass" expanded="True">
+            <Node name="Plugins" expanded="True">
+              <Node name="AdBuddiz" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

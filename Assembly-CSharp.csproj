@@ -55,6 +55,7 @@
      <Compile Include="Assets\adScript.cs" />
      <Compile Include="Assets\animationScript.cs" />
      <Compile Include="Assets\coin.cs" />
+     <Compile Include="Assets\high_score.cs" />
      <Compile Include="Assets\instructions_to_intro.cs" />
      <Compile Include="Assets\rocket_wall_collision_patch.cs" />
      <Compile Include="Assets\sceneScroller.cs" />

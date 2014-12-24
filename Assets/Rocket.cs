@@ -12,9 +12,15 @@ public class Rocket : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.Translate(-0.05f,0,0);
-		life--;
-		if(life == 1) { Destroy(gameObject); }
+		bool lost = GameObject.FindGameObjectWithTag ("Player").GetComponent<WalkThatWay> ().lose;
+		bool paused = GameObject.FindGameObjectWithTag ("Player").GetComponent<WalkThatWay> ().onPause;
+		if (!lost && !paused) {
+						transform.Translate (-0.05f, 0, 0);
+						life--;
+						if (life == 1) {
+								Destroy (gameObject);
+						}
+				}
 	}
 
 	void OnTriggerEnter2D(Collider2D other)
