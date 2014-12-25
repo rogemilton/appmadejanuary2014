@@ -122,9 +122,9 @@ public class WalkThatWay : MonoBehaviour {
 			}
 				}
 
-
-		else if (GameObject.FindGameObjectWithTag ("score").GetComponent<Points> ().point > 60 && !pass1) {
-			current_timescale = 1.35f;
+		//Use these settings to adjust the difficulty
+		if (GameObject.FindGameObjectWithTag ("score").GetComponent<Points> ().point > 60 && !pass1) {
+			current_timescale = 1.5f;
 			Time.timeScale = current_timescale;
 			pass1 = true;
 		}
@@ -143,10 +143,13 @@ public class WalkThatWay : MonoBehaviour {
 			//make two rockets
 			Vector3 instants = new Vector3 (11.0f,Random.Range(0f,7.05f),0.0f);
 			Instantiate(rocket, instants,Quaternion.identity);
-	
-				//instants = new Vector3 (11.0f,Random.Range(0f,7.05f),0.0f);
-				//Instantiate(rocket, instants,Quaternion.identity);
-			
+			//Randomly give double rockets because why not
+			//Adjust the range to set the difficulty
+			if(Random.Range(0,5) == 4)
+			{
+				instants = new Vector3 (11.0f,Random.Range(0f,7.05f),0.0f);
+				Instantiate(rocket, instants,Quaternion.identity);
+			}
 			
 
 		}
