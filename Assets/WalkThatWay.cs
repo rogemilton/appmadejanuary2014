@@ -211,14 +211,6 @@ public class WalkThatWay : MonoBehaviour {
 					
 						GUI.Box (new Rect (0, 0  , Screen.width, Screen.height), "\n\nCurrent Score: " + current_score.ToString () + "\n\nBest Score: " + best_score.ToString ());
 						if (GUI.Button (new Rect (Screen.width / 2 - 155 , Screen.height - 75,  150, 70), "Play Again")) {
-
-				
-
-								Random.seed = (int)System.DateTime.Now.Ticks;
-								if (Random.Range (1, 4) == 2) 
-								{
-									AdBuddizBinding.ShowAd();
-								}
 								Application.LoadLevel ("firstscene");
 								//		GUI.EndGroup ();
 						}
@@ -263,12 +255,5 @@ public class WalkThatWay : MonoBehaviour {
 			Application.LoadLevel(0);		
 		}
 	}
-	void DidHideAd() {
-		AdBuddizBinding.LogNative("DidHideAd");
-		Debug.Log ("Unity: DidHideAd");
-		Application.LoadLevelAsync ("firstscene");
-		
-	}
-
 
 }

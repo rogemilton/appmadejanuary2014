@@ -63,13 +63,7 @@ public class instructions_to_intro : MonoBehaviour {
 		//START BUTTON
 		if (GUI.Button ( new Rect (xPos, yPos,200,75), "START"))
 		{
-			Random.seed = (int)System.DateTime.Now.Ticks;
-			if (Random.Range (1, 3) == 2) 
-			{
-				AdBuddizBinding.ShowAd();
-			}
-			else
-				Application.LoadLevel ("firstscene");
+		    Application.LoadLevel ("firstscene");
 		}
 
 		//EXIT BUTTON
@@ -78,52 +72,4 @@ public class instructions_to_intro : MonoBehaviour {
 				}
 
     }
-	void OnEnable()
-	{
-		// Listen to AdBuddiz events
-		AdBuddizManager.didFailToShowAd += DidFailToShowAd;
-		AdBuddizManager.didCacheAd += DidCacheAd;
-		AdBuddizManager.didShowAd += DidShowAd;
-		AdBuddizManager.didClick += DidClick;
-		AdBuddizManager.didHideAd += DidHideAd;
-	}
-	
-	void OnDisable()
-	{
-		// Remove all event handlers
-		AdBuddizManager.didFailToShowAd -= DidFailToShowAd;
-		AdBuddizManager.didCacheAd -= DidCacheAd;
-		AdBuddizManager.didShowAd -= DidShowAd;
-		AdBuddizManager.didClick -= DidClick;
-		AdBuddizManager.didHideAd -= DidHideAd;
-		
-	}
-	
-	void DidFailToShowAd(string adBuddizError) {
-		AdBuddizBinding.LogNative("DidFailToShowAd: " + adBuddizError);
-		Debug.Log ("Unity: DidFailToShowAd: " + adBuddizError);
-	}
-	
-	void DidCacheAd() {
-		AdBuddizBinding.LogNative("DidCacheAd");
-		Debug.Log ("Unity: DidCacheAd");
-		
-	}
-	
-	void DidShowAd() {
-		AdBuddizBinding.LogNative("DidShowAd");
-		Debug.Log ("Unity: DidShowAd");
-	}
-	
-	void DidClick() {
-		AdBuddizBinding.LogNative("DidClick");
-		Debug.Log ("Unity: DidClick");
-	}
-	
-	void DidHideAd() {
-		AdBuddizBinding.LogNative("DidHideAd");
-		Debug.Log ("Unity: DidHideAd");
-		Application.LoadLevelAsync ("firstscene");
-		
-	}
 }

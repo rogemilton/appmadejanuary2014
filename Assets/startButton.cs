@@ -26,19 +26,6 @@ public class startButton : MonoBehaviour {
 			mManager.name = musicPrefab.name;
 			DontDestroyOnLoad(mManager);
 		}
-		if (!GameObject.FindGameObjectWithTag ("_Ad")) {
-						var adManager = Instantiate (adPrefab, transform.position, Quaternion.identity) as Transform;
-						
-
-				
-						//Ad scripts and shit
-						AdBuddizBinding.SetLogLevel (AdBuddizBinding.ABLogLevel.Info);         // log level
-			AdBuddizBinding.SetAndroidPublisherKey ("MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAg6RMp8DD693tRO4l5MAcy4d3IG02OFubYlVUv9TTgYfk85rDZxqSZchJSHJLywAgNbUewR706TE9KEZSFhngvYXC2IhFdW7xyMi78CV0sbqOY4FXNNDLjGKLHxTSujt+eZpCqzEVe0iIFDYrx8dSR8tzCe5PgE6MZlBuumii7H4Lh9zkJfsvD4hq7DF0VlFYra+oxjalg2GTzBRHdJYj4GDi1LEGAD2LKHkNfD/2yCSdL+h75MTtfFheZRRcBCK+dbKPxqyHloBjcEsaXY5LFn4nw4laq0MHZgqn+u3vliKA/Eki4EF8FH/OnAeK2AUNW2wRCFgNLAz8W8SQhSSSAwIDAQAB"); // replace with your Android app publisher key
-						AdBuddizBinding.SetIOSPublisherKey ("TEST_PUBLISHER_KEY_IOS");         // replace with your iOS app publisher key
-						AdBuddizBinding.SetTestModeActive ();                                  // to delete before submitting to store
-						AdBuddizBinding.CacheAds ();  
-	
-				}
 	}
 	void Update()
 	{
@@ -76,12 +63,6 @@ public class startButton : MonoBehaviour {
 	
 	if (GUI.Button ( new Rect (xPos, yPos,175,75), "START"))
 	{
-		Random.seed = (int)System.DateTime.Now.Ticks;
-		if (Random.Range (1, 3) == 2) 
-		{
-			AdBuddizBinding.ShowAd();
-		}
-		else
 		  Application.LoadLevel ("firstscene");
 		//	GUI.EndGroup ();
 	}
@@ -104,13 +85,13 @@ public class startButton : MonoBehaviour {
 				;
 			}
 			else {
-				if(GameObject.FindGameObjectWithTag ("Music").audio.isPlaying)
+				if(GameObject.FindGameObjectWithTag ("Music").GetComponent<AudioSource>().isPlaying)
 				{
-					GameObject.FindGameObjectWithTag ("Music").audio.Pause ();
+					GameObject.FindGameObjectWithTag ("Music").GetComponent<AudioSource>().Pause ();
 				}
 				else
 				{
-					GameObject.FindGameObjectWithTag ("Music").audio.Play ();
+					GameObject.FindGameObjectWithTag ("Music").GetComponent<AudioSource>().Play ();
 				}
 
 				//DestroyObject(button);
@@ -122,54 +103,7 @@ public class startButton : MonoBehaviour {
 	
 	}
 
-	void OnEnable()
-	{
-		// Listen to AdBuddiz events
-		AdBuddizManager.didFailToShowAd += DidFailToShowAd;
-		AdBuddizManager.didCacheAd += DidCacheAd;
-		AdBuddizManager.didShowAd += DidShowAd;
-		AdBuddizManager.didClick += DidClick;
-		AdBuddizManager.didHideAd += DidHideAd;
-	}
-	
-	void OnDisable()
-	{
-		// Remove all event handlers
-		AdBuddizManager.didFailToShowAd -= DidFailToShowAd;
-		AdBuddizManager.didCacheAd -= DidCacheAd;
-		AdBuddizManager.didShowAd -= DidShowAd;
-		AdBuddizManager.didClick -= DidClick;
-		AdBuddizManager.didHideAd -= DidHideAd;
 
-	}
-	
-	void DidFailToShowAd(string adBuddizError) {
-		AdBuddizBinding.LogNative("DidFailToShowAd: " + adBuddizError);
-		Debug.Log ("Unity: DidFailToShowAd: " + adBuddizError);
-	}
-	
-	void DidCacheAd() {
-		AdBuddizBinding.LogNative("DidCacheAd");
-		Debug.Log ("Unity: DidCacheAd");
-
-	}
-	
-	void DidShowAd() {
-		AdBuddizBinding.LogNative("DidShowAd");
-		Debug.Log ("Unity: DidShowAd");
-	}
-	
-	void DidClick() {
-		AdBuddizBinding.LogNative("DidClick");
-		Debug.Log ("Unity: DidClick");
-	}
-	
-	void DidHideAd() {
-		AdBuddizBinding.LogNative("DidHideAd");
-		Debug.Log ("Unity: DidHideAd");
-		Application.LoadLevelAsync ("firstscene");
-
-	}
 	/*
 }*/
 

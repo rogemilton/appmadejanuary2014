@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class high_score : MonoBehaviour {
 
@@ -10,7 +11,7 @@ public class high_score : MonoBehaviour {
 			best_score = PlayerPrefs.GetInt ("Score");
 			
 		}
-		guiText.text = "BEST: " + best_score; //1/2 second
+		GetComponent<Text>().text = "BEST: " + best_score; //1/2 second
 	
 	}
 	

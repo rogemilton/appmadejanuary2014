@@ -14,13 +14,13 @@ public class rocket_wall_collision_patch : MonoBehaviour {
 		var rockets = GameObject.FindGameObjectsWithTag("enemy");
 		int len = rockets.Length;
 		for(int i = 0; i < len; i++)
-			Physics.IgnoreCollision (GameObject.FindGameObjectWithTag ("right_wall").collider, rockets[i].collider);
+			Physics.IgnoreCollision (GameObject.FindGameObjectWithTag ("right_wall").GetComponent<Collider>(), rockets[i].GetComponent<Collider>());
 	}
 	void OnCollisionEnter(Collision other)
 	{
 
 		if (other.gameObject.name == "rocket(Clone)") {
-						Physics.IgnoreCollision (GameObject.FindGameObjectWithTag ("right_wall").collider, other.collider);
+						Physics.IgnoreCollision (GameObject.FindGameObjectWithTag ("right_wall").GetComponent<Collider>(), other.collider);
 				} 
 
 	}

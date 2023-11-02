@@ -1,0 +1,189 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-31:12
+	package
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:70-98
+		INJECTED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml
+		INJECTED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:212-237
+	xmlns:android
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:188-211
+	android:installLocation
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:99-139
+	android:theme
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:140-187
+uses-permission#android.permission.INTERNET
+ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:3-65
+	android:name
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:20-62
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:3-77
+	android:name
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:20-74
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:5:3-74
+	android:name
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:5:20-71
+uses-feature#0x00020000
+ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:3-52
+	android:glEsVersion
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:17-49
+uses-feature#android.hardware.sensor.accelerometer
+ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:3-97
+	android:required
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:70-94
+	android:name
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:17-69
+uses-feature#android.hardware.touchscreen
+ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:8:3-88
+	android:required
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:8:61-85
+	android:name
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:8:17-60
+uses-feature#android.hardware.touchscreen.multitouch
+ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:3-99
+	android:required
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:72-96
+	android:name
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:17-71
+uses-feature#android.hardware.touchscreen.multitouch.distinct
+ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:3-108
+	android:required
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:81-105
+	android:name
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:17-80
+application
+ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:3-29:17
+	android:extractNativeLibs
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:107-139
+	android:label
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:48-80
+	android:debuggable
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:81-106
+	android:icon
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:16-47
+	android:isGame
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:140-161
+meta-data#unity.splash-mode
+ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:5-69
+	android:value
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:49-66
+	android:name
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:16-48
+meta-data#unity.splash-enable
+ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:5-74
+	android:value
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:51-71
+	android:name
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:16-50
+meta-data#unity.launch-fullscreen
+ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:5-78
+	android:value
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:55-75
+	android:name
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:16-54
+meta-data#unity.allow-resizable-window
+ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:5-84
+	android:value
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:60-81
+	android:name
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:16-59
+meta-data#notch.config
+ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:5-81
+	android:value
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:44-78
+	android:name
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:16-43
+meta-data#unity.auto-report-fully-drawn
+ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:5-84
+	android:value
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:61-81
+	android:name
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:16-60
+activity#com.unity3d.player.UnityPlayerNativeActivity
+ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:5-27:16
+	android:screenOrientation
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:108-144
+	android:label
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:75-107
+	android:launchMode
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:145-176
+	android:hardwareAccelerated
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:394-429
+	android:exported
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:430-453
+	android:resizeableActivity
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:359-393
+	android:configChanges
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:177-358
+	android:name
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:15-74
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER+category:name:android.intent.category.LEANBACK_LAUNCHER
+ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:7-23:23
+category#android.intent.category.LAUNCHER
+ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:9-69
+	android:name
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:19-66
+category#android.intent.category.LEANBACK_LAUNCHER
+ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:9-78
+	android:name
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:19-75
+action#android.intent.action.MAIN
+ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:9-61
+	android:name
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:17-58
+meta-data#unityplayer.UnityActivity
+ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:7-82
+	android:value
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:59-79
+	android:name
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:18-58
+meta-data#unityplayer.ForwardNativeEventsToDalvik
+ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:7-97
+	android:value
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:73-94
+	android:name
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:18-72
+meta-data#notch_support
+ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:7-70
+	android:value
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:47-67
+	android:name
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:18-46
+activity#com.purplebrain.adbuddiz.sdk.AdBuddizActivity
+ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:5-127
+	android:theme
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:76-124
+	android:name
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:15-75
+supports-screens
+ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:30:3-163
+	android:largeScreens
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:30:78-105
+	android:smallScreens
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:30:21-48
+	android:normalScreens
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:30:49-77
+	android:xlargeScreens
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:30:106-134
+	android:anyDensity
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:30:135-160
+uses-sdk
+INJECTED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml
+INJECTED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml
+INJECTED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml
+INJECTED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml
+		INJECTED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml
+		ADDED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml
+		INJECTED from D:\appmadejanuary2014\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml
