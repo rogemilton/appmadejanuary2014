@@ -5,7 +5,7 @@ public class startButton : MonoBehaviour {
 
 
 
-	void Awake() { Screen.orientation = ScreenOrientation.LandscapeLeft }
+	void Awake() { Screen.orientation = ScreenOrientation.LandscapeLeft; }
 
     public Transform musicPrefab;
 	public Transform adPrefab;
@@ -61,7 +61,7 @@ public class startButton : MonoBehaviour {
 	    {
 		    Application.LoadLevel("Instructions");
 	    }
-	    if((GUI.Button (musicRect, "MUSIC"))) {
+	    if((GUI.Button (musicRect, "Music"))) {
 		
 		    if (GameObject.FindGameObjectWithTag ("Music")) {
 			    if(GameObject.FindGameObjectWithTag ("Music").GetComponent<AudioSource>().isPlaying)

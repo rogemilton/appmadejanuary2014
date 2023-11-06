@@ -238,7 +238,7 @@ public class WalkThatWay : MonoBehaviour {
 			}
 			else
 			{
-				if (GUI.Button (new Rect (Screen.width -190 , 40,  150, 70), "Resume"))
+				if (GUI.Button (new Rect (Screen.width -220 , 40,  180, 70), "Resume"))
 				{
 					Time.timeScale = 1f;
 					onPause = false;
