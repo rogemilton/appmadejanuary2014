@@ -12,15 +12,16 @@ public class WalkThatWay : MonoBehaviour {
 	float start_y = 0f;
 
 	//Four rockets go out asynchriously
-	float timer1 = .65f;
-	float timer2 = .95F;
-	float timer3 = 1.25F;
-	float timer4 = 1.45F;
+	float timer1 = 1f;
+	float timer2 = 1.2F;
+	float timer3 = 1.6F;
+	float timer4 = 2.1F;
 	float current_timescale; //Used to speed up the game as the user's points increase
 	public bool lose;
 	public Points points;//reference to score
 
 	public Transform musicPrefab;
+    private bool debugWithKeyboard = true;
 	// Use this for initialization
 	//pause button
 	public bool onPause;
@@ -50,7 +51,6 @@ public class WalkThatWay : MonoBehaviour {
 		//all the goddamn time!!
 		Screen.orientation = ScreenOrientation.LandscapeLeft;
 		Screen.sleepTimeout = SleepTimeout.NeverSleep;
-		
 	}
 
 	
@@ -60,34 +60,40 @@ public class WalkThatWay : MonoBehaviour {
 	{   
 		if (!lose) {
 						
-						if (!onPause) {
-								Accelerate (0.001f);
-								//insantiate rockets according to this script
-								makeItHard ();/*
-								if (Input.touchCount > 0 ) {
-										Time.timeScale = 0f;
-										onPause = true;
-										
-										//System.Threading.Thread.Sleep(500);
-										
-										//SleepTimeout(1);
-								}*/
+			if (!onPause) {
+                if (debugWithKeyboard)
+                {
+                    float speed = 0.001f;
+                    Vector3 pos = transform.position;
 
-						} else {/*
-								if (Input.touchCount > 0  ) {
-										Time.timeScale = 1f;
-										onPause = false;
-										
-										//System.Threading.Thread.Sleep(500);
-										
-										//SleepTimeout(1);
-								}
-								//recalibrate input*/
-								start_x = Input.acceleration.x;
-								start_y = Input.acceleration.y;
+                    if (Input.GetKey("w"))
+                    {
+                        pos.y += speed * Time.deltaTime;
+                    }
+                    if (Input.GetKey("s"))
+                    {
+                        pos.y -= speed * Time.deltaTime;
+                    }
+                    if (Input.GetKey("d"))
+                    {
+                        pos.x += speed * Time.deltaTime;
+                    }
+                    if (Input.GetKey("a"))
+                    {
+                        pos.x -= speed * Time.deltaTime;
+                    }
 
-						}
-				}
+
+                    transform.position = pos;
+                }
+				Accelerate (0.001f);
+				makeItHard ();
+
+			} else {
+				start_x = Input.acceleration.x;
+				start_y = Input.acceleration.y;
+			}
+		}
 	
 	
 	}
@@ -101,29 +107,29 @@ public class WalkThatWay : MonoBehaviour {
 			timer1 -= Time.deltaTime;
 			timer3 -= Time.deltaTime;
 			timer4 -= Time.deltaTime;
-						if (timer1 <= 0) {
-								timer1 = .7f;
-								Rockets ();
+			if (timer1 <= 0) {
+					timer1 = 1f;
+					Rockets ();
 								
-						}
-						if (timer2 <= 0) {
-								timer2 = 95f;
-								Rockets ();
-						}
+			}
+			if (timer2 <= 0) {
+				timer2 = 1.2F;
+				Rockets ();
+			}
 
 			if (timer3 <= 0) {
-				timer3 = 1.2f;
+				timer3 = 1.6f;
 				Rockets ();
 				
 			}
 			if (timer4 <= 0) {
-				timer4 = 1.4f;
+				timer4 = 2.1f;
 				Rockets ();
 			}
 				}
 
 		//Use these settings to adjust the difficulty
-		if (GameObject.FindGameObjectWithTag ("score").GetComponent<Points> ().point > 60 && !pass1) {
+		if (GameObject.FindGameObjectWithTag ("score").GetComponent<Points> ().point > 100 && !pass1) {
 			current_timescale = 1.5f;
 			Time.timeScale = current_timescale;
 			pass1 = true;
@@ -193,8 +199,8 @@ public class WalkThatWay : MonoBehaviour {
 			GUI.skin.font = f;
 			
 			//set font size
-			GUI.skin.box.fontSize = GUI.skin.button.fontSize = 40;
-			GUI.skin.box.fontSize = GUI.skin.button.fontSize = 40;
+			GUI.skin.box.fontSize = GUI.skin.button.fontSize = 60;
+			GUI.skin.box.fontSize = GUI.skin.button.fontSize = 60;
 
 						int current_score = (int)GameObject.FindGameObjectWithTag ("score").GetComponent<Points> ().point;
 						var best_score = 0;
@@ -206,20 +212,15 @@ public class WalkThatWay : MonoBehaviour {
 						if (current_score > best_score) {
 								PlayerPrefs.SetInt ("Score", current_score);
 								PlayerPrefs.Save ();
-
 						}
 					
 						GUI.Box (new Rect (0, 0  , Screen.width, Screen.height), "\n\nCurrent Score: " + current_score.ToString () + "\n\nBest Score: " + best_score.ToString ());
-						if (GUI.Button (new Rect (Screen.width / 2 - 155 , Screen.height - 75,  150, 70), "Play Again")) {
+						if (GUI.Button (new Rect (Screen.width / 2 - 250 , Screen.height - 88, 225, 78), "Play again")) {
 								Application.LoadLevel ("firstscene");
-								//		GUI.EndGroup ();
 						}
 						
-						if (GUI.Button (new Rect (Screen.width/2 , Screen.height - 75, 150, 70), "Quit")) {
-				
-				
+						if (GUI.Button (new Rect (Screen.width/2 , Screen.height - 88, 150, 78), "Quit")) {				
 								Application.LoadLevel (0);
-								//		GUI.EndGroup ();
 						}
 
 						Time.timeScale = 0f;
@@ -228,7 +229,7 @@ public class WalkThatWay : MonoBehaviour {
 		else{
 			if(!onPause)
 			{
-				if (GUI.Button (new Rect (Screen.width -155 , 5,  150, 70), "Pause"))
+				if (GUI.Button (new Rect (Screen.width -190 , 40,  150, 70), "Pause"))
 				{
 					Time.timeScale = 0f;
 					onPause = true;
@@ -237,7 +238,7 @@ public class WalkThatWay : MonoBehaviour {
 			}
 			else
 			{
-				if (GUI.Button (new Rect (Screen.width -155 , 5,  150, 70), "Resume"))
+				if (GUI.Button (new Rect (Screen.width -190 , 40,  150, 70), "Resume"))
 				{
 					Time.timeScale = 1f;
 					onPause = false;
@@ -251,7 +252,6 @@ public class WalkThatWay : MonoBehaviour {
 	{
 		if (other.gameObject.tag == "enemy") 
   		{
-
 			Application.LoadLevel(0);		
 		}
 	}

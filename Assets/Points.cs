@@ -17,7 +17,10 @@ public class Points : MonoBehaviour {
 		{
 			point += 1;
 			timer = .25F;
-			GetComponent<UnityEngine.UI.Text>().text = "Score: " + point; //1/2 second
+            string score = "Score: " + point;
+            // GUI.Box(new Rect(0, 0, Screen.width, Screen.height), score);
+
+            GetComponent<TMPro.TextMeshProUGUI>().text = score; //1/2 second
 		}
 	}
 }

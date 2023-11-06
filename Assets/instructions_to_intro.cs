@@ -41,17 +41,18 @@ public class instructions_to_intro : MonoBehaviour {
 		GUI.skin.font = f;
 
 		//set font size
-		GUI.skin.box.fontSize = GUI.skin.button.fontSize = 40;
+	    GUI.skin.button.fontSize = 60;
+        GUI.skin.box.fontSize = 60;
 
-
-		//BUTTON POSITIONS
-		float xPos = Screen.width /2 -10;
+        //BUTTON POSITIONS
+        float xPos = Screen.width /2 -10;
 		float yPos = Screen.height - 80;
 		float optxPos = Screen.width/2 - 250;
 		float optyPos = Screen.height - 80;
 
-
-		var instruction_string = "1.Hold your phone with screen facing up." +
+		var instruction_string = "You are a lucky fish sitting on his rocket chair" +
+            "\nFlying through the mountain air" +
+            "\n1.Hold your phone with screen facing up." +
 			"\nTilt your screen to move\n" +
 						"\n2.Avoid Rockets" +
 						"\n\n3.Press pause to pause " +
@@ -61,15 +62,15 @@ public class instructions_to_intro : MonoBehaviour {
 		 GUI.Box (new Rect (0, 0, Screen.width, Screen.height), instruction_string);
 
 		//START BUTTON
-		if (GUI.Button ( new Rect (xPos, yPos,200,75), "START"))
+		if (GUI.Button ( new Rect (xPos, yPos,200,75), "Start"))
 		{
 		    Application.LoadLevel ("firstscene");
 		}
 
 		//EXIT BUTTON
-		if (GUI.Button (new Rect (optxPos, optyPos, 200, 75), "EXIT")) {
+		if (GUI.Button (new Rect (optxPos, optyPos, 200, 75), "Exit")) {
 			Application.LoadLevel("IntroScreen");
-				}
+		}
 
     }
 }

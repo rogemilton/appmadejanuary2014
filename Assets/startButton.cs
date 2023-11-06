@@ -5,19 +5,12 @@ public class startButton : MonoBehaviour {
 
 
 
-	void Awake() { 
+	void Awake() { Screen.orientation = ScreenOrientation.LandscapeLeft }
 
-
-		Screen.orientation = ScreenOrientation.LandscapeLeft;
-
-		
-
-	}
     public Transform musicPrefab;
 	public Transform adPrefab;
     void Start()
 	{
-
 		//If we havent made the music manager yet then make it
 		//And don't destroy it when we switch scenes
 		if(!GameObject.FindGameObjectWithTag("Music"))
@@ -45,7 +38,7 @@ public class startButton : MonoBehaviour {
 		GUI.skin.font = f;
 		
 		//set font size
-		GUI.skin.box.fontSize = GUI.skin.button.fontSize = 40;
+		GUI.skin.box.fontSize = GUI.skin.button.fontSize = 60;
 		//button position variables
 		float xPos = Screen.width /2 + 100;
       	float yPos = Screen.height - 80;
@@ -56,55 +49,30 @@ public class startButton : MonoBehaviour {
 		//Button rectangles
 		Rect musicRect = new Rect (musicxPos, musicyPos, 175, 75);
 
-		GUI.skin.box.fontSize = GUI.skin.button.fontSize = 40;
-
-    //Buttons
-	//GUI.BeginGroup (new Rect(0,0,Screen.width,Screen.height));
+        //Buttons
+	    if (GUI.Button ( new Rect (xPos, yPos,175,75), "Start"))
+	    {
+		      Application.LoadLevel ("firstscene");
+	    }
 	
-	if (GUI.Button ( new Rect (xPos, yPos,175,75), "START"))
-	{
-		  Application.LoadLevel ("firstscene");
-		//	GUI.EndGroup ();
-	}
+	    string buttonText = "Help";
 	
-	string buttonText = "HELP";
-	
-	if(GUI.Button( new Rect(optxPos, optyPos, 175,75),buttonText))
-	{
-
-
-			Application.LoadLevel("Instructions");
-	//		GUI.EndGroup ();
-	}
-	
-
-		if((GUI.Button (musicRect, "MUSIC")))
-		   {
+	    if(GUI.Button( new Rect(optxPos, optyPos, 175,75),buttonText))
+	    {
+		    Application.LoadLevel("Instructions");
+	    }
+	    if((GUI.Button (musicRect, "MUSIC"))) {
 		
-			if (!GameObject.FindGameObjectWithTag ("Music")) {
-				;
-			}
-			else {
-				if(GameObject.FindGameObjectWithTag ("Music").GetComponent<AudioSource>().isPlaying)
-				{
-					GameObject.FindGameObjectWithTag ("Music").GetComponent<AudioSource>().Pause ();
-				}
-				else
-				{
-					GameObject.FindGameObjectWithTag ("Music").GetComponent<AudioSource>().Play ();
-				}
-
-				//DestroyObject(button);
-				//button = (GUI.Button (new Rect (musicxPos, musicyPos, 150, 70), "Toggle Music"));
-			}
-		}
-
-
-	
-	}
-
-
-	/*
-}*/
-
+		    if (GameObject.FindGameObjectWithTag ("Music")) {
+			    if(GameObject.FindGameObjectWithTag ("Music").GetComponent<AudioSource>().isPlaying)
+			    {
+				    GameObject.FindGameObjectWithTag ("Music").GetComponent<AudioSource>().Pause ();
+			    }
+			    else
+			    {
+				    GameObject.FindGameObjectWithTag ("Music").GetComponent<AudioSource>().Play ();
+			    }
+		    }
+	    }
+    }
 }
