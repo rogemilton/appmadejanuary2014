@@ -1,2 +1,3 @@
-appmadejanuary2014
+Lucky Fish
 ==================
+An awesome game for mobile devices
