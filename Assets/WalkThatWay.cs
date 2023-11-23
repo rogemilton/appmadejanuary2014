@@ -21,7 +21,7 @@ public class WalkThatWay : MonoBehaviour {
 	public Points points;//reference to score
 
 	public Transform musicPrefab;
-    private bool debugWithKeyboard = true;
+
 	// Use this for initialization
 	//pause button
 	public bool onPause;
@@ -61,31 +61,6 @@ public class WalkThatWay : MonoBehaviour {
 		if (!lose) {
 						
 			if (!onPause) {
-                if (debugWithKeyboard)
-                {
-                    float speed = 0.001f;
-                    Vector3 pos = transform.position;
-
-                    if (Input.GetKey("w"))
-                    {
-                        pos.y += speed * Time.deltaTime;
-                    }
-                    if (Input.GetKey("s"))
-                    {
-                        pos.y -= speed * Time.deltaTime;
-                    }
-                    if (Input.GetKey("d"))
-                    {
-                        pos.x += speed * Time.deltaTime;
-                    }
-                    if (Input.GetKey("a"))
-                    {
-                        pos.x -= speed * Time.deltaTime;
-                    }
-
-
-                    transform.position = pos;
-                }
 				Accelerate (0.001f);
 				makeItHard ();
 
