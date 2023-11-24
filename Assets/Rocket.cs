@@ -5,17 +5,18 @@ using System.Collections;
 public class Rocket : MonoBehaviour {
 	// Use this for initialization
 	public int life;
-	//public float speed = (Time.timeSinceLevelLoad * 0.05f) + 0.05f; -Roger: I'll explain this later!
+	//public float speed = 0; (Time.timeSinceLevelLoad * 0.05f) + 0.05f; // -Roger: I'll explain this later!
 	void Start () {
-
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		bool lost = GameObject.FindGameObjectWithTag ("Player").GetComponent<WalkThatWay> ().lose;
 		bool paused = GameObject.FindGameObjectWithTag ("Player").GetComponent<WalkThatWay> ().onPause;
+		float speed = -( 0.055f);
+		Debug.Log(speed);
 		if (!lost && !paused) {
-			transform.Translate (-0.05f, 0, 0);
+			transform.Translate (speed, 0, 0);
 			life--;
 			if (life == 1) {
 					Destroy (gameObject);

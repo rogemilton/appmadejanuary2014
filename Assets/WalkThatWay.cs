@@ -50,7 +50,6 @@ public class WalkThatWay : MonoBehaviour {
 		//keep the character from falling off the fucking screen
 		//all the goddamn time!!
 		Screen.orientation = ScreenOrientation.LandscapeLeft;
-		Screen.sleepTimeout = SleepTimeout.NeverSleep;
 	}
 
 	
@@ -59,18 +58,25 @@ public class WalkThatWay : MonoBehaviour {
 	void Update() 
 	{   
 		if (!lose) {
-						
 			if (!onPause) {
-				Accelerate (0.001f);
-				makeItHard ();
-
+				Accelerate(0.001f);
+				makeItHard();
+				if (Screen.sleepTimeout != SleepTimeout.NeverSleep)
+                {
+					Screen.sleepTimeout = SleepTimeout.NeverSleep;
+                }
 			} else {
 				start_x = Input.acceleration.x;
 				start_y = Input.acceleration.y;
+				Screen.sleepTimeout = SleepTimeout.SystemSetting;	
 			}
-		}
-	
-	
+		} else
+        {
+			if (Screen.sleepTimeout != SleepTimeout.SystemSetting)
+            {
+				Screen.sleepTimeout = SleepTimeout.SystemSetting;
+            }
+        }
 	}
 	bool pass1 = false;
 	bool pass2 = false;
